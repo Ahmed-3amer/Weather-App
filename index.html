@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <!-- icon -->
+    <link rel="icon" href="./images/icon.png" />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="weather-app">
+      <div class="weather-container">
+        <h3 class="brand">The Weather</h3>
+        <ul
+          class="weather-icons d-flex justify-content-center align-items-center"
+        >
+          <li class="clear-weather">
+            <img src="./images/weather/clear.png" alt="clear" />
+          </li>
+          <li class="cloudy-weather">
+            <img src="./images/weather/cloudy.png" alt="cloudy" />
+          </li>
+          <li class="drizzle-weather">
+            <img src="./images/weather/drizzle.png" alt="drizzle" />
+          </li>
+          <li class="rain-weather">
+            <img src="./images/weather/rain.png" alt="rain" />
+          </li>
+          <li class="mist-weather">
+            <img src="./images/weather/mist.png" alt="mist" />
+          </li>
+          <li class="snow-weather">
+            <img src="./images/weather/snow.png" alt="snow" />
+          </li>
+          <li class="thunder-weather">
+            <img src="./images/weather/thunder.png" alt="thunder" />
+          </li>
+        </ul>
+        <div class="weather">
+          <h1 class="temp"></h1>
+          <h1 class="name"></h1>
+          <div
+            class="d-flex flex-column justify-content-center align-items-center"
+          >
+            <!-- <img
+              src="./images/113.png"
+              alt="weather"
+              width="50px"
+              height="50px"
+              class="icon"
+            /> -->
+            <span class="condition"></span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div id="locationBar">
+          <input
+            type="search"
+            id="searchInput"
+            placeholder="Search Location..."
+          />
+          <p
+            id="emptyInputMessage"
+            class="text-center mt-2 fs-5 bg-warning text-secondary d-none"
+          >
+            please enter a city!
+          </p>
+          <p id="errorMessage" class="text-center mt-2 fs-5 d-none"></p>
+          <button id="searchBtn">
+            <i class="fa-solid fa-magnifying-glass fs-3"></i>
+          </button>
+        </div>
+        <ul class="cities">
+          <li class="city">Cairo</li>
+          <li class="city">New York</li>
+          <li class="city">Paris</li>
+          <li class="city">Tokyo</li>
+        </ul>
+        <ul class="details">
+          <h4>Weather Details</h4>
+          <li>
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="bi bi-cloudy fs-1 me-1 mb-2"></i>
+              <span>Cloudiness</span>
+            </div>
+            <span class="cloud">50</span>
+          </li>
+          <li>
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="bi bi-water fs-1 me-1 mb-2"></i>
+              <span>Humidity</span>
+            </div>
+            <span class="humidity">64%</span>
+          </li>
+          <li>
+            <div class="d-flex justify-content-center align-items-center">
+              <i class="bi bi-wind fs-1 me-1 mb-2"></i>
+              <span>Wind</span>
+            </div>
+            <span class="wind">8km/h</span>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- js file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
